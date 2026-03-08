@@ -1,229 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>YodhaFitness</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yodha Fitness Centre</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: white;
-        }
+<style>
 
-        header {
-            background: linear-gradient(to right, #000000, #b30000);
-            padding: 20px;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(white, #ffd6e7);
+}
 
-        nav {
-            text-align: center;
-            padding: 10px;
-            background-color: #1a1a1a;
-        }
+/* Navbar */
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
+nav{
+background:#ffb6c1;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-        nav a:hover {
-            color: red;
-        }
+nav h1{
+color:white;
+}
 
-        .hero {
-            background: url('https://images.unsplash.com/photo-1599058917765-a780eda07a3e') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
 
-        .hero h1 {
-            background-color: rgba(0,0,0,0.7);
-            padding: 20px;
-            border-radius: 10px;
-        }
+nav ul li{
+color:white;
+cursor:pointer;
+}
 
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
+/* Hero */
 
-        .equipment {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+.hero{
+text-align:center;
+padding:80px 20px;
+background:white;
+}
 
-        .equipment img {
-            width: 250px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+.hero h2{
+color:#ff4d88;
+font-size:40px;
+}
 
-        .plans {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+.hero p{
+color:#555;
+}
 
-        .plan-card {
-            background-color: #1f1f1f;
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-        }
+/* Equipment Section */
 
-        .plan-card h3 {
-            color: red;
-        }
+.equipment{
+padding:50px;
+text-align:center;
+}
 
-        .btn {
-            background-color: red;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+.equipment h2{
+color:#ff4d88;
+}
 
-        .btn:hover {
-            background-color: darkred;
-        }
+.equipment-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+margin-top:30px;
+}
 
-        footer {
-            background-color: #000;
-            padding: 15px;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+width:200px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+/* Training Section */
+
+.training{
+background:white;
+padding:50px;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:40px;
+}
+
+.training img{
+width:250px;
+border-radius:10px;
+}
+
+.training-text{
+max-width:400px;
+}
+
+.training-text h2{
+color:#ff4d88;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+background:#ffb6c1;
+padding:20px;
+color:white;
+}
+
+</style>
 </head>
 
 <body>
-
-<header>
-    YODHAFITNESS
-</header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#equipment">Equipment</a>
-    <a href="#membership">Membership</a>
-    <a href="#contact">Contact</a>
+<h1>Yodha Fitness</h1>
+<ul>
+<li>Home</li>
+<li>Equipments</li>
+<li>Training</li>
+<li>Contact</li>
+</ul>
 </nav>
 
-<div class="hero">
-    <h1>Train Like a Warrior 💪</h1>
+<section class="hero">
+<h2>Welcome to Yodha Fitness Centre</h2>
+<p>Transform your body with the best gym training and modern equipments.</p>
+</section>
+
+<section class="equipment">
+<h2>Gym Equipments</h2>
+
+<div class="equipment-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61">
+<h3>Dumbbells</h3>
 </div>
 
-<section id="about">
-    <h2>About YodhaFitness</h2>
-    <p>
-        YodhaFitness is a premium fitness club designed to help you build strength,
-        discipline, and confidence. Our modern equipment and expert trainers help
-        you achieve your dream physique.
-    </p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+<h3>Treadmill</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<h3>Bench Press</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598971639058-bc6f6b5b4c7d">
+<h3>Squat Rack</h3>
+</div>
+
+</div>
+
 </section>
 
-<section id="equipment">
-    <h2>Our Gym Equipment</h2>
-    <div class="equipment">
-        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61" alt="Dumbbells">
-        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f" alt="Treadmill">
-        <img src="https://images.unsplash.com/photo-1594737625785-c0e14baf4a5a" alt="Bench Press">
-    </div>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Man with Royal Enfield Motorcycle</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .container {
-            position: relative;
-            width: 500px;
-            height: auto;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px;
-        }
-        .caption {
-            margin-top: 10px;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            color: #333;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="man-with-royal-enfield.jpg" alt="Man leaning on a black Royal Enfield motorcycle with green foliage background">
-        <div class="caption">Man leaning on a black Royal Enfield motorcycle with green foliage background</div>
-    </div>
-</body>
-</section>
+<section class="training">
 
-<section id="membership">
-    <h2>Membership Plans</h2>
-    <div class="plans">
-        <div class="plan-card">
-            <h3>Basic Plan</h3>
-            <p>₹1500 / Month</p>
-            <p>Access to gym equipment</p>
-            <button class="btn" onclick="alert('Redirecting to Payment...')">Pay Now</button>
-        </div>
+<img src="your-image.jpg" alt="Gym Training">
 
-        <div class="plan-card">
-            <h3>Premium Plan</h3>
-            <p>₹2500 / Month</p>
-            <p>Gym + Personal Trainer</p>
-            <button class="btn" onclick="alert('Redirecting to Payment...')">Pay Now</button>
-        </div>
+<div class="training-text">
+<h2>Personal Gym Training</h2>
+<p>
+Our professional trainers help you build strength, endurance,
+and confidence. We provide personal training, weight loss programs,
+and muscle building workouts.
+</p>
 
-        <div class="plan-card">
-            <h3>Annual Plan</h3>
-            <p>₹10000 / Year</p>
-            <p>All Premium Benefits</p>
-            <button class="btn" onclick="alert('Redirecting to Payment...')">Pay Now</button>
-        </div>
-    </div>
-</section>
+<p>
+Join Yodha Fitness and start your fitness journey today.
+</p>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: yodhafitness@gmail.com</p>
-    <p>Phone: +91 99129 93587</p>
+</div>
+
 </section>
 
 <footer>
-    © 2026 YodhaFitness | All Rights Reserved
+<p>© 2026 Yodha Fitness Centre | Stay Strong 💪</p>
 </footer>
 
 </body>
