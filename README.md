@@ -148,6 +148,46 @@
         <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f" alt="Treadmill">
         <img src="https://images.unsplash.com/photo-1594737625785-c0e14baf4a5a" alt="Bench Press">
     </div>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man with Royal Enfield Motorcycle</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            position: relative;
+            width: 500px;
+            height: auto;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="man-with-royal-enfield.jpg" alt="Man leaning on a black Royal Enfield motorcycle with green foliage background">
+        <div class="caption">Man leaning on a black Royal Enfield motorcycle with green foliage background</div>
+    </div>
+</body>
 </section>
 
 <section id="membership">
@@ -155,21 +195,21 @@
     <div class="plans">
         <div class="plan-card">
             <h3>Basic Plan</h3>
-            <p>₹999 / Month</p>
+            <p>₹1500 / Month</p>
             <p>Access to gym equipment</p>
             <button class="btn" onclick="alert('Redirecting to Payment...')">Pay Now</button>
         </div>
 
         <div class="plan-card">
             <h3>Premium Plan</h3>
-            <p>₹1999 / Month</p>
+            <p>₹2500 / Month</p>
             <p>Gym + Personal Trainer</p>
             <button class="btn" onclick="alert('Redirecting to Payment...')">Pay Now</button>
         </div>
 
         <div class="plan-card">
             <h3>Annual Plan</h3>
-            <p>₹9999 / Year</p>
+            <p>₹10000 / Year</p>
             <p>All Premium Benefits</p>
             <button class="btn" onclick="alert('Redirecting to Payment...')">Pay Now</button>
         </div>
